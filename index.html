@@ -12,21 +12,34 @@
         <div class="section">
             <div class="container is-max-desktop">
 
+                <div class="mb-4 is-hidden" id="success-message">
+                    <article class="message is-success">
+                        <div class="message-header">
+                          <p>Success</p>
+                          <button class="delete" aria-label="delete"></button>
+                        </div>
+                        <div class="message-body">
+                            <p>Username: <span id="show-username"></span></p>
+                            <p>Email: <span id="show-email"></span></p>
+                        </div>
+                      </article>
+                </div>
+
                 <form name="register">
 
                     <div class="field">
-                        <label class="label">Username</label>
+                        <label class="label" for="username">Username</label>
                         
                         <div class="control">
-                            <input class="input" type="text" placeholder="Your Name" name="username">
+                            <input class="input" type="text" placeholder="Your Name" name="username" id="username">
                         </div>
                     </div>
                                   
                     <div class="field">
-                        <label class="label">Email</label>
+                        <label class="label" for="email">Email</label>
                         
                         <div class="control">
-                            <input class="input is-danger" type="email" placeholder="name@" name="email">
+                            <input class="input is-danger" type="email" placeholder="name@" name="email" id="email">
                         </div>
 
                         <p class="help is-danger">This email is invalid</p>
